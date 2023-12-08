@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Favorite Pokemon</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>View your favorite pokemon!</h1>
+        <div id = 'error'><%= errorMsg %></div>
+        <form action='/viewFavorite' method='post'>
+        <fieldset>
+            <label for='email'><strong>Email Address: </strong></label>
+            <input required id='email' name='email' type='email'>
+        </fieldset>
+
+        <input type='reset' value='Reset'> 
+        <input type='submit' value="Submit">
+
+        </form>
+
+        <a href="/">homepage</a>
+    </body>
+</html>
